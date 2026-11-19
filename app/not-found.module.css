@@ -1,0 +1,14 @@
+.container {
+  max-width: 1000px;
+  margin: 48px auto;
+  padding: 32px 24px;
+  text-align: center;
+}
+.title {
+  margin: 0 0 16px;
+  font-size: clamp(26px, 4vw, 40px);
+}
+.description {
+  font-size: 17px;
+  color: #64748b;
+}

@@ -1,0 +1,18 @@
+.main {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 30px 16px 80px;
+}
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+.back {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2563eb;
+}
+.status {
+  text-align: center;
+  padding: 40px 20px;
+}

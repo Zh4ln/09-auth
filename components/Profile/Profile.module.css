@@ -1,0 +1,85 @@
+.mainContent {
+  width: min(700px, calc(100% - 32px));
+  margin: 44px auto;
+}
+.profileCard {
+  background: #fff;
+  border: 1px solid #e1e5eb;
+  border-radius: 8px;
+  padding: 28px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.formTitle {
+  margin: 0;
+  font-size: 28px;
+}
+.editProfileButton,
+.saveButton {
+  display: inline-block;
+  border: 0;
+  background: #315bd8;
+  color: #fff;
+  text-decoration: none;
+  padding: 11px 16px;
+  border-radius: 5px;
+  font: inherit;
+  cursor: pointer;
+}
+.avatarWrapper {
+  margin: 24px 0 18px;
+}
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatarPlaceholder {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e6edff;
+  color: #2544a4;
+  font-size: 48px;
+}
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profileInfo p {
+  margin: 0;
+}
+.usernameWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input {
+  min-height: 42px;
+  border: 1px solid #cbd2da;
+  padding: 10px;
+  border-radius: 5px;
+  font: inherit;
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+}
+.cancelButton {
+  border: 1px solid #bbc1cc;
+  background: #fff;
+  padding: 11px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font: inherit;
+}
+.error {
+  color: #c12a2a;
+}

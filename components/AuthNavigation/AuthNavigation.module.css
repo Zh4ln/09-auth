@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+}
+.navigation a:hover,
+.logoutButton:hover {
+  color: #8fb3ff;
+}
+.email {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  color: #ddd;
+}
+.logoutButton {
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  .navigation {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .email {
+    max-width: 110px;
+  }
+}

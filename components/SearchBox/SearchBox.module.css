@@ -1,0 +1,21 @@
+.input {
+  width: min(100%, 260px);
+  flex-shrink: 1;
+  min-width: 175px;
+  padding: 10px 12px;
+  border: 1px solid #cdd5df;
+  border-radius: 5px;
+  background: white;
+  color: #263041;
+  font-size: 14px;
+  outline: none;
+}
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #2563eb26;
+}
+@media (max-width: 580px) {
+  .input {
+    width: 100%;
+  }
+}

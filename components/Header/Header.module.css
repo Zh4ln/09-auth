@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  min-height: 64px;
+  padding: 12px max(20px, calc((100vw - 1180px) / 2));
+  background: #292929;
+  color: white;
+}
+.logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation a {
+  font-weight: 600;
+  color: #e5e7eb;
+  text-decoration: none;
+}
+.navigation a:hover,
+.navigation a:focus-visible {
+  color: #93c5fd;
+}

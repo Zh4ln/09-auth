@@ -1,0 +1,56 @@
+.mainContent {
+  width: min(480px, calc(100% - 32px));
+  margin: 64px auto;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+.formTitle {
+  font-size: 28px;
+  margin: 0 0 4px;
+  text-align: center;
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.input {
+  height: 44px;
+  border: 1px solid #cbd2da;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font: inherit;
+}
+.input:focus {
+  outline: 2px solid #416bdf;
+  outline-offset: 1px;
+}
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.submitButton {
+  background: #315bd8;
+  color: #fff;
+  border: 0;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+.error {
+  color: #c42f2f;
+  line-height: 1.5;
+  margin: 0;
+}

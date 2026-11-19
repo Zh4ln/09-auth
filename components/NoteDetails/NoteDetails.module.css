@@ -1,0 +1,34 @@
+.item {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #dce3eb;
+  border-radius: 8px;
+}
+.header {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+.header h2 {
+  margin: 0;
+  font-size: 24px;
+  overflow-wrap: anywhere;
+}
+.tag {
+  display: inline-block;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.content {
+  color: #263041;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.75;
+}
+.date {
+  color: #64748b;
+  font-size: 13px;
+}

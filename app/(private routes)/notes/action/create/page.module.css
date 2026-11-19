@@ -1,0 +1,31 @@
+.main {
+  width: 100%;
+  padding: 40px 20px 70px;
+}
+.container {
+  width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #dbe2ec;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgb(15 23 42 / 4%);
+}
+.title {
+  margin: 0 0 26px;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #17212f;
+}
+@media (max-width: 640px) {
+  .main {
+    padding: 20px 12px 50px;
+  }
+  .container {
+    padding: 20px 16px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}

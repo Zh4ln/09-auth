@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+.heading {
+  font-size: 21px;
+  margin: 0;
+}
+.closeButton {
+  border: 0;
+  background: #eff3f8;
+  color: #1f2937;
+  border-radius: 6px;
+  font-size: 25px;
+  line-height: 1;
+  padding: 6px 11px;
+}
+.closeButton:hover {
+  background: #e2e8f0;
+}
+.status {
+  text-align: center;
+  padding: 24px;
+}
