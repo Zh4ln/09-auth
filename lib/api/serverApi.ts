@@ -1,3 +1,4 @@
+import type { AxiosResponse } from "axios";
 import { cookies } from "next/headers";
 import { api } from "./api";
 import { normalizeNotesResponse } from "./clientApi";
@@ -38,22 +39,15 @@ export async function getMe(): Promise<User> {
   return data;
 }
 
+// The entire Axios response is required by proxy.ts: session refresh
+// cookies are exposed on response.headers["set-cookie"].
 export async function checkSession(
-  cookie?: string,
+  cookieHeader?: string,
   origin?: string,
-): Promise<User | null> {
-  const cookieValue = cookie ?? (await cookies()).toString();
-  if (!cookieValue) return null;
-  const options = {
+): Promise<AxiosResponse<User>> {
+  const cookieValue = cookieHeader ?? (await cookies()).toString();
+  return api.get<User>("/auth/session", {
     headers: { Cookie: cookieValue },
     ...(origin ? { baseURL: `${origin}/api` } : {}),
-  };
-  try {
-    const { data } = await api.get<User | null>("/auth/session", options);
-    if (data && typeof data.email === "string") return data;
-    const me = await api.get<User | null>("/users/me", options);
-    return me.data && typeof me.data.email === "string" ? me.data : null;
-  } catch {
-    return null;
-  }
+  });
 }

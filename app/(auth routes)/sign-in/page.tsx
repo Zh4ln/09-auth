@@ -3,7 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { useQueryClient } from "@tanstack/react-query";
-import { login, getMe } from "@/lib/api/clientApi";
+import { login } from "@/lib/api/clientApi";
 import { useAuthStore } from "@/lib/store/authStore";
 import css from "../auth.module.css";
 
@@ -22,8 +22,7 @@ export default function SignInPage() {
     setPending(true);
     setError("");
     try {
-      await login({ email, password });
-      const user = await getMe();
+      const user = await login({ email, password });
       setUser(user);
       queryClient.setQueryData(["auth", "session"], user);
       router.replace("/profile");
